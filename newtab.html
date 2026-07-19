@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Graph Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="topbar">
+    <div id="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">graph<em>home</em></span>
+    </div>
+
+    <div id="modeSwitch">
+      <button class="mode-btn active" data-mode="favorites">⭐ Favorites</button>
+      <button class="mode-btn" data-mode="bookmarks">📁 Bookmarks</button>
+    </div>
+
+    <div id="bookmarkViewSwitch">
+      <button class="view-btn active" data-view="drill">Explore</button>
+      <button class="view-btn" data-view="full">Whole picture</button>
+    </div>
+
+    <div id="crumbBar"></div>
+
+    <button id="soundToggleBtn" class="icon-btn" title="Toggle sound effects">🔊</button>
+  </header>
+
+  <main id="stage">
+    <div id="sceneContainer"></div>
+    <div id="emptyState" class="hidden">
+      <p id="emptyTitle"></p>
+      <p id="emptySub"></p>
+    </div>
+  </main>
+
+  <button id="addFavBtn" class="fab" title="Add a link or folder">+</button>
+
+  <div id="modalOverlay" class="hidden modal-overlay">
+    <div id="modal" class="modal-card">
+      <h2 id="modalTitle">Add favorite</h2>
+      <div id="favTypeToggle" class="type-toggle hidden">
+        <button type="button" class="type-btn active" data-type="link">🔗 Link</button>
+        <button type="button" class="type-btn" data-type="folder">📁 Folder</button>
+      </div>
+      <label>Title
+        <input id="favTitle" type="text" placeholder="e.g. GitHub">
+      </label>
+      <label id="favUrlField">URL
+        <input id="favUrl" type="text" placeholder="https://github.com">
+      </label>
+      <div id="modalActions" class="modal-actions">
+        <button id="deleteFavBtn" class="ghost-btn hidden">Delete</button>
+        <div class="spacer"></div>
+        <button id="cancelBtn" class="ghost-btn">Cancel</button>
+        <button id="saveFavBtn" class="primary-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bookmarkModalOverlay" class="hidden modal-overlay">
+    <div class="modal-card">
+      <h2 id="bookmarkModalTitle">Edit bookmark</h2>
+      <label>Title
+        <input id="bmTitleInput" type="text" placeholder="Title">
+      </label>
+      <label id="bmUrlField">URL
+        <input id="bmUrlInput" type="text" placeholder="https://example.com">
+      </label>
+      <div class="modal-actions">
+        <div class="spacer"></div>
+        <button id="bmCancelBtn" class="ghost-btn">Cancel</button>
+        <button id="bmSaveBtn" class="primary-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nodeContextMenu" class="hidden node-context-menu">
+    <button id="ctxAddLinkBtn" class="ctx-item hidden">➕ Add favorite here</button>
+    <button id="ctxAddFolderBtn" class="ctx-item hidden">📁 Add folder here</button>
+    <button id="ctxEditBtn" class="ctx-item">✏️ Edit</button>
+    <button id="ctxDeleteBtn" class="ctx-item ctx-danger">🗑️ Delete</button>
+  </div>
+
+  <div id="deleteConfirmBar" class="hidden confirm-bar">
+    <span id="deleteConfirmText"></span>
+    <div class="confirm-bar-actions">
+      <button id="deleteCancelBtn" class="ghost-btn">Cancel</button>
+      <button id="deleteConfirmBtn" class="danger-btn">Delete</button>
+    </div>
+  </div>
+
+  <div id="hint">drag to rotate · scroll to zoom · click a node to open a link or enter a folder · double-click to edit · right-click for edit/delete/add options</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
