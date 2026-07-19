@@ -25,7 +25,7 @@ A Chrome New Tab replacement that turns your bookmarks and favorites into an int
 1. **Clone the repository**:
 
    ```
-   git clone https://github.com/siop1/graph-homepage.git
+   git clone https://github.com/siop1/GraphHomepage.git
    cd GraphHomepage
    ```
    Or, you can simply download it.
@@ -33,7 +33,7 @@ A Chrome New Tab replacement that turns your bookmarks and favorites into an int
 2. **Load it into Chrome**:
    - Open `chrome://extensions`
    - Enable **Developer mode** (top-right toggle)
-   - Click **Load unpacked** and select the `graph-homepage` folder containing app.js and other files
+   - Click **Load unpacked** and select the `GraphHomepage` folder containing app.js and other files
 3. **Open a new tab** — Graph Home replaces Chrome's default New Tab page.
 
 ### Controls
@@ -61,7 +61,7 @@ No build step, no framework, no dependencies to install — it's a plain unpacke
 ### Project Structure
 
 ```
-graph-homepage/
+GraphHomepage/
 ├── manifest.json         # Extension manifest (MV3)
 ├── newtab.html           # New Tab page markup (modals, context menu, controls)
 ├── style.css             # All UI styling
