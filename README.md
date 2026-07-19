@@ -84,8 +84,6 @@ Favorites are stored locally via `chrome.storage.local` as a flat list mirroring
 
 Top-level items have `parentId: 'root'`. Bookmarks are **not** duplicated into this storage — Bookmarks mode reads directly from `chrome.bookmarks`, so any edits or deletes there affect your real Chrome bookmarks.
 
-> Upgrading from an older version that stored favorites as a plain flat array? They're migrated automatically the first time the new tab page loads — nothing is lost.
-
 ## 🔐 Permissions
 
 - `bookmarks` — to read/edit/delete real Chrome bookmarks in Bookmarks mode.
