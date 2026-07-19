@@ -26,9 +26,8 @@ A Chrome New Tab replacement that turns your bookmarks and favorites into an int
 
    ```
    git clone https://github.com/siop1/GraphHomepage.git
-   cd GraphHomepage
    ```
-   Or, you can simply download it.
+   Or, you can simply download the zip and extract it.
 
 2. **Load it into Chrome**:
    - Open `chrome://extensions`
