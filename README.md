@@ -1,8 +1,10 @@
-# Graph Home
+# Graph Homepage
 
 A Chrome New Tab replacement that turns your bookmarks and favorites into an interactive, force-directed 3D graph instead of a plain list.
 
 ![manifest](https://img.shields.io/badge/manifest-v3-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![permissions](https://img.shields.io/badge/permissions-bookmarks%2C%20storage-lightgrey)
+
+![App screenshot](https://github.com/siop1/GraphHomepage/blob/main/screenshots/screenshot.png?raw=true)
 
 ## ✨ Features
 
