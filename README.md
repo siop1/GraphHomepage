@@ -22,18 +22,32 @@ A Chrome New Tab replacement that turns your bookmarks and favorites into an int
 
 ## 🚀 How to Use
 
-1. **Clone the repository**:
+First, get a local copy of the project using **either** of the two methods below. You only need one of them.
 
-   ```
-   git clone https://github.com/siop1/GraphHomepage.git
-   ```
-   Or, you can simply download the zip and extract it.
+### Option A: Clone with Git
 
-2. **Load it into Chrome**:
-   - Open `chrome://extensions`
-   - Enable **Developer mode** (top-right toggle)
-   - Click **Load unpacked** and select the `GraphHomepage` folder containing app.js and other files
-3. **Open a new tab** — Graph Home replaces Chrome's default New Tab page.
+```
+git clone https://github.com/siop1/GraphHomepage.git
+```
+
+This creates a `GraphHomepage` folder in your current directory.
+
+### Option B: Download as ZIP
+
+1. Go to the [repository page](https://github.com/siop1/GraphHomepage).
+2. Click the green **Code** button, then **Download ZIP**.
+3. Extract the downloaded ZIP file. This creates a `GraphHomepage` (or `GraphHomepage-main`) folder.
+
+> Both options give you the exact same set of files — pick whichever is easier for you. You don't need Git installed to use Option B.
+
+### Load it into Chrome
+
+Once you have the folder (from either option above):
+
+1. Open `chrome://extensions`
+2. Enable **Developer mode** (top-right toggle)
+3. Click **Load unpacked** and select the `GraphHomepage` folder containing the `vendor` folder, `app.js` file, and other files.
+4. **Open a new tab** — Graph Home replaces Chrome's default New Tab page.
 
 ### Controls
 
@@ -56,6 +70,7 @@ No build step, no framework, no dependencies to install — it's a plain unpacke
 ### Prerequisites
 
 - A Chromium-based browser (Chrome, Edge, Brave, etc.)
+- Git (optional — only needed if you use Option A above; not required for the ZIP download)
 
 ### Project Structure
 
@@ -63,9 +78,9 @@ No build step, no framework, no dependencies to install — it's a plain unpacke
 GraphHomepage/
 ├── manifest.json         # Extension manifest (MV3)
 ├── newtab.html           # New Tab page markup (modals, context menu, controls)
-├── style.css             # All UI styling
-├── app.js                # Graph engine, state, rendering, and all interaction logic
-└── vendor/               # Bundled Three.js, OrbitControls, CSS2DRenderer
+├── style.css              # All UI styling
+├── app.js                 # Graph engine, state, rendering, and all interaction logic
+└── vendor/                # Bundled Three.js, OrbitControls, CSS2DRenderer
 ```
 
 ### Running the Application
