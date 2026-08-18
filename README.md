@@ -30,7 +30,6 @@ Click the ⚙️ icon in the top bar to open the settings panel, or go to `chrom
 |---|---|
 | Click a link node | Opens the URL in a new tab |
 | Click a folder node | Enters that folder (Explore) or jumps to it (Whole picture) |
-| Double-click a node | Opens the edit modal |
 | Right-click a node | Edit / **Hide** / Delete, plus Add options on favorite folders |
 | Search bar | Live results as you type; click a result to jump to it |
 | `+` button (Favorites mode) | Adds a new link or folder to the current context |
