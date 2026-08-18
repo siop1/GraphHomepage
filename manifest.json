@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Graph Home Advanced",
+  "version": "1.4",
+  "description": "An advanced, themeable, force-directed graph New Tab page for your bookmarks and favorites \u2014 with search, backups, and deep customization.",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "downloads"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
