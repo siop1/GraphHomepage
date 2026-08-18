@@ -2,6 +2,8 @@
 
 An advanced, deeply customizable Chrome New Tab replacement that turns your bookmarks and favorites into an interactive force-directed graph — now with **2D/3D modes, full theming, search, safer local storage, and a real settings panel.**
 
+![Graph Home Advanced screenshot](screenshots/screenshot.png)
+
 ---
 
 ## 🚀 How to Use
